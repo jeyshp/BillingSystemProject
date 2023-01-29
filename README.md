@@ -1,2 +1,3 @@
 # BillingSystemProject
- System that can be used by companies to bill their clients 
+ 
+Following BC Hydro's charging policies,this system takes in a billing period in days and the units used to produce the charge for that period.
