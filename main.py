@@ -22,7 +22,7 @@ def createNewPerson(name, id):
 def printoutName(): #
     print("Hello. Please enter your name:")
     temp3 = input()
-    checkID(temp3.isdigit(),temp3)
+    checkName(temp3.isdigit(),temp3)
 
 def printoutID(): #
     print("Please enter your personal id number:")
@@ -71,15 +71,15 @@ def checkID(boolcheck, temp1): #checks if input is string
         printoutID()
     else:
         global PersonalID
-        PersonalID = int(input())
+        PersonalID = int(temp1)
       
-def checkname(boolcheck, temp3): #
+def checkName(boolcheck, temp3): #
     if boolcheck == True:
         print ("NO NUMERICAL CHARACTERS" )
         printoutName()
     else:
         global Name
-        Name = input()
+        Name = temp3
       
 
 printoutName()
